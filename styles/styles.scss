@@ -1,0 +1,364 @@
+
+
+@import url(setup);
+
+
+body {
+	position: relative;
+	font-family: 'Source Serif Pro', serif;
+	background: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+select {
+	font-size: 24px;
+}
+
+.hide {
+	display: none;
+}
+
+.yummlyLogo {
+margin-bottom: 30px;
+}
+
+.fancyButton {
+	margin-top: 10px;
+	border-radius: 20px;
+	border-style: none;
+	background: lightgreen;
+	font-size: 20px;
+	// width:70%;
+	height: 40px;
+	color: rgb(20, 54, 111);
+}
+
+.loadMoreBtn {
+	
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	padding: 70px 90px 0;
+}
+
+h1 {
+	flex: 1 0 auto;
+	font-size: 100px;
+	margin: 30px 0 10px;
+}
+
+h2 {
+	margin: 20px 0px 25px;
+}
+
+h5 {
+	font-size: 19px;
+	margin: 20px 0;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 17px;
+	line-height: 1px;
+}
+
+
+// HEADER STYLES
+header {
+	background: url('../images/foodBg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 680px;
+	height: 100vh;
+	color: white;
+	padding-bottom: 50px;
+	border-bottom: 15px solid rgb(167, 184, 81);
+	button.toTop {
+		position: fixed;
+		top: 40px;
+		right: 40px;
+		color: rgb(20, 54, 111);
+		background: lightgreen;
+		border-style: none;
+		border-radius: 50%;
+		padding: 10px;
+	}
+}
+
+.contentBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+} 
+
+.logoBox {
+	display: flex;
+	flex-direction: row;
+}
+
+.logoBox i {
+	border: 2px solid lightgreen;
+	padding: 7px 10px;
+	margin-top: 15px;
+	font-size: 40px;
+	height: 40px;
+}
+
+p {
+	font-size: 30px;
+	margin: 26px 14px;
+	span {
+		color: lightgreen;
+	}
+}
+
+.linkBox {
+	display: flex;	
+	max-width: 40%;
+	padding: 10px;
+	align-items: center;
+	// justify-content: center;
+	i {
+		font-size: 36px;
+	}
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	text-align: right;
+	li:nth-child(2) {
+		font-size: 20px;
+		font-weight: 700;
+		color: lightgreen;
+	}
+} 
+
+form {
+	max-width: 20%;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+form label {
+	font-size: 21px;
+	color: rgb(105, 235, 105);
+}
+
+select {
+	margin: 20px 0;
+}
+
+select:last-child {
+	margin: 20px 0 60px;
+}
+
+// CLOSE HEADER STYLES
+
+// RECIPE SECTION
+#recipe {
+	background: white;
+	// margin: 50px auto;
+	margin: 0 auto;
+	padding: 50px;
+	max-width: 1100px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	// padding-left: 20px;
+}
+
+h4 {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0 70px;
+    font-size: 55px;
+}
+
+.recipeBox {
+	background: rgb(249, 249, 249);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1 0 calc(28% - 60px);
+	// min-width: 380px;
+	max-width: calc(50% - 60px);
+	padding: 20px;
+	margin:0 20px 20px 0;
+	border-radius: 10px;
+	color: rgb(64, 64, 64);
+	img {
+		width: 100%;
+	}
+	p {
+		margin: 0 0 30px;
+	}
+}
+
+.ingredientsList {
+	color: black;
+	font-size: 16px;
+}
+
+footer {
+	display: flex;
+	background: rgb(139, 101, 118);
+	margin: 0 auto;
+	border-top: 15px solid rgb(144, 238, 144);
+}
+
+.footWrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.loadMoreBox {
+	margin: 0 auto 70px;
+	width: 200px;
+}
+
+.footBox {
+	margin: 0 auto;
+ 	p {
+ 		margin: 40px 0 10px;
+ 		font-size: 16px;
+ 		color: rgb(211, 211, 211);
+ 		display: inline-block;
+		a {
+			color: lightgreen;
+		}
+	}
+}
+
+//  MEDIA QUERIES ------------------------------------------------->
+@media (max-width: 920px) {
+
+	#recipe {
+		background: rgb(249, 249, 249);
+		margin: 50px 20px;
+		display: flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+		// padding-left: 0px;
+	}
+
+	.recipeBox {
+		// background: rgb(249, 249, 249);
+		background: white;
+		// display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex: 1 0 calc(50% - 60px);
+		// min-width: calc(100% - 40px);
+		max-width: calc(50% - 60px);
+		padding: 20px;
+		margin:0 20px 20px 0;
+		border-radius: 10px;
+		color: rgb(64, 64, 64);
+		.recipeBox img {
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media (max-width: 815px) {
+	h1 {
+		font-size: 90px;
+	}
+	.wrapper {
+		padding: 30px 80px;
+	}
+}
+
+@media (max-width: 770px) {
+	h1 {
+		font-size: 90px;
+	}
+	.wrapper {
+		padding: 30px 60px;
+	}
+}
+
+@media (max-width: 680px) {
+	h1 {
+		font-size: 84px;
+	}
+	.wrapper {
+		padding: 30px 60px;
+	}
+}
+
+@media (max-width: 640px) {
+	.recipeBox {
+		min-width: calc(100% - 60px);
+	}
+	h1 {
+		font-size: 80px;
+	}
+	.wrapper {
+		padding: 25px 30px;
+	}
+}
+
+@media (max-width: 580px) {
+		h1 {
+		font-size: 80px;
+	}
+	.wrapper {
+		padding: 25px 20px;
+	}
+}
+
+@media (max-width: 540px) {
+		h1 {
+		font-size: 74px;
+	}
+	.wrapper {
+		padding: 25px 20px;
+	}
+}
+
+@media (max-width: 502px) {
+		h1 {
+		font-size: 68px;
+	}
+	.wrapper {
+		padding: 25px 20px;
+	}
+}
+
+@media (max-width: 465px) {
+		h1 {
+		font-size: 60px;
+	}
+	.wrapper {
+		padding: 25px 20px;
+	}
+}
+
+
+@media(max-width: 400px) {
+	h1 {
+		line-height: .9;
+	}
+}
+
+@media(max-width: 375px) {
+	.recipeBox {
+	    min-width: -webkit-calc(100% - 40px);
+	    min-width: calc(100% - 60px);
+	}
+}
+

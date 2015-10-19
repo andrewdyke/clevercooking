@@ -1,0 +1,174 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<title>Clever Cooks | World Recipe Finder</title>
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Device ViewPort for responsive layout -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="styles/animate.css">
+
+	<!-- Hover.css -->
+	<link rel="stylesheet" href="styles/hover-min.css">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles/styles.css">
+	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- FAVICONS -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-imagestouch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+	<meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="images/largetile.png" />
+</head>
+
+<!-- Background image url: https://resources.pryynt.me/media/b7/b0/31/51/e1/a2/15/dd/bc/7e/24/9d/79/cf/14/43/b7b03151e1a215ddbc7e249d79cf1443_thumbbig.jpg -->
+
+<body class="animated pulse">
+
+<!-- HEADER -->
+<header>
+	
+	<button class="toTop">
+		TOP
+	</button>
+
+	<div class="wrapper">
+
+		<nav>
+			<div class="logoBox hvr-grow">
+				<i class="fa fa-cutlery"></i>
+				<p>Clever<span>Cooks</span></p>
+			</div>
+
+			<div class="linkBox">
+				<i class="fa fa-twitter hvr-pulse-grow"></i>
+			</div>
+
+		</nav>
+		
+			<div class="contentBox">
+				<h1>Find a Recipe</h1>
+
+				<h2>Easily find great recipes from around the world.</h2>
+
+				<form class="recipeForm">
+					<label class="dropDown" for="selectHoliday">Occasion:</label>
+
+					<select id="selectedHoliday" name="selectHoliday">
+					  <option value="">Doesn't Matter</option>
+					  <option value="Game+Day">Game Day</option> 
+					  <option value="Thanksgiving">Thanksgiving</option>
+					  <option value="Halloween">Halloween</option>
+					  <option value="Hanukkah">Hanukkah</option> 
+					  <option value="Christmas">Christmas</option>
+					  <option value="New+Year">New Year</option>
+					  <option value="Summer">Summer</option>
+					  <option value="4th+of+July">4th of July</option>
+					</select>
+
+					<label for="selectCourse">Select By Course:</label>
+
+					<select class="dropDown" id="selectedCourse" name="selectCourse">
+					  <option value="">All Courses</option>
+					  <option value="Main+Dishes">Main Dishes</option>
+					  <option value="Side+Dishes">Side Dishes</option>
+					  <option value="Appetizers">Appetizers</option>
+					  <option value="Lunch+and+Snacks">Lunch and Snacks</option>
+					  <option value="Breakfast+and+Brunch">Breakfast and Brunch</option>
+					  <option value="Soups">Soups</option>
+					  <option value="Beverages">Beverages</option>
+					  <option value="Condiments+and+Sauces">Condiments and Sauces</option>
+					  <option value="Cocktails">Cocktails</option>
+					</select>
+
+					<label for="prepTime">Prep-Time:</label>
+
+					<select class="dropDown" id="prepTime" name="prepTime">
+						<option value="">Doesn't Matter</option>
+					  <option value="900">Under 15 minutes</option> 
+					  <option value="1800">Under 30 minutes</option>
+					  <option value="3600">Under 60 minutes</option>
+					  <option value="7200">Under 2 hours</option>
+					</select>
+					
+					<input class="fancyButton" type="submit" value="Find Recipes">
+				</form>
+
+			</div><!--/.contentBox-->
+		
+	</div> <!--/.wrapper -->
+</header>
+<!-- /.HEADER -->
+
+<!-- RECIPE SECTION -->
+<!-- This section will have be where the content generated will appear.  -->
+<section id="recipe">
+</section>
+
+<!-- LOAD MORE BUTTON-->
+<div class="footWrapper">
+	<div class="loadMoreBox">
+		<button class="fancyButton loadMore loadMoreBtn hide">Load More Recipes</button>
+	</div>
+</div>
+
+
+<!--FOOTER-->
+<footer>
+
+<div class="footWrapper">
+	<div class="footBox">
+		<p>Copyright 2015 | <a href="http://www.andrewdyke.me">Andrew Dyke</a></p>
+	</div>
+
+		<div class="yummlyLogo">
+		<a href="https://developer.yummly.com/">
+			<img src="images/yummlyLogo.png" alt="Yummly logo link">
+		</a>
+	</div>
+</div>
+</footer>
+
+<!-- ======================== SCRIPTS ======================== -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Smooth Scroll -->
+<script src="scripts/jquery.smooth-scroll.js"></script>
+
+<!-- Recipe App JS -->
+<script src="scripts/recipeApp2.js"></script>
+
+</body>
+</html>
