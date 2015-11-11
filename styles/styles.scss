@@ -25,18 +25,15 @@ margin-bottom: 30px;
 }
 
 .fancyButton {
-	margin-top: 10px;
-	border-radius: 20px;
-	border-style: none;
-	background: lightgreen;
-	font-size: 20px;
-	// width:70%;
-	height: 40px;
-	color: rgb(20, 54, 111);
-}
-
-.loadMoreBtn {
-	
+  margin-top: 10px;
+  border-radius: 20px;
+  border-style: none;
+  background: rgb(144, 238, 144);
+  font-size: 20px;
+  padding: 5px 50px;
+  height: 40px;
+  width: 300px;
+  color: rgb(20, 54, 111);
 }
 
 .wrapper {
@@ -225,7 +222,7 @@ footer {
 
 .loadMoreBox {
 	margin: 0 auto 70px;
-	width: 200px;
+	width: 290px;
 }
 
 .footBox {
@@ -243,10 +240,9 @@ footer {
 
 //  MEDIA QUERIES ------------------------------------------------->
 @media (max-width: 920px) {
-
 	#recipe {
 		background: rgb(249, 249, 249);
-		margin: 50px 20px;
+		margin: 0;
 		display: flex;
 		flex-direction:row;
 		flex-wrap: wrap;
@@ -263,7 +259,7 @@ footer {
 		// min-width: calc(100% - 40px);
 		max-width: calc(50% - 60px);
 		padding: 20px;
-		margin:0 20px 20px 0;
+		margin: 10px;
 		border-radius: 10px;
 		color: rgb(64, 64, 64);
 		.recipeBox img {
@@ -286,8 +282,23 @@ footer {
 	h1 {
 		font-size: 90px;
 	}
+	h4 {
+		margin: 55px 10px 70px;
+	}
+	#recipe {
+		padding: 10px;
+	}
 	.wrapper {
-		padding: 30px 60px;
+		padding: 80px 75px;
+	}
+	.contentBox {
+		margin: 50px 0;
+	}
+	.fancyButton {
+		margin-top: 50px;
+	}
+	form {
+		margin: 75px 0;
 	}
 }
 
@@ -341,10 +352,13 @@ footer {
 
 @media (max-width: 465px) {
 		h1 {
-		font-size: 60px;
+		font-size: 50px;
 	}
 	.wrapper {
 		padding: 25px 20px;
+	}
+	.contentBox {
+		margin: 0;
 	}
 }
 
@@ -353,12 +367,37 @@ footer {
 	h1 {
 		line-height: .9;
 	}
+	h2 {
+		font-size: 20px;
+	}
+	form {
+		margin: 0;
+		max-width: 100%;
+	}
 }
 
 @media(max-width: 375px) {
+	#recipe {
+		margin: 0;
+		padding: 10px;
+	}
+	h4 {
+		margin: 20px 0;
+	}
 	.recipeBox {
-	    min-width: -webkit-calc(100% - 40px);
-	    min-width: calc(100% - 60px);
+  padding: 10px;
+  width: calc(100% - 20px);
+  min-width: calc(100% - 40px);
+	}
+	select {
+		width: 93%;
+	}
+	.fancyButton {
+		margin: 50px 20px 0 0;
+		width: 100%;
+	}
+	.loadMoreBox {
+	  margin: 20px auto 70px;
 	}
 }
 
