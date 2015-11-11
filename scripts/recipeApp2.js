@@ -15,6 +15,8 @@ recipeApp.apiId = '4180c144';
 recipeApp.apiKey = '58c4ec16abb8bc536b83d95dbb8c80b2';
 
 recipeApp.numRecipes = 0;
+
+// Predetermined result number we can update and reuse to load more recipes.
 recipeApp.maxResult = 12;
 
 // Create a function(method) inside our object to retrieve data from API
@@ -103,9 +105,11 @@ recipeApp.displayResult = function(recipeObject) {
 	//  Then place the recipeBox in an element with the id of recipe
 	$('#recipe').append(recipeBox);
 
-	$.smoothScroll({
-		scrollTarget: '#recipe'
-	});
+	if (recipeApp.numRecipes === 12) {
+		$.smoothScroll({
+			scrollTarget: '#recipe'
+		});
+	};
 };
 
 // Making the form work
