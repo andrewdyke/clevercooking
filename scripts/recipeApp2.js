@@ -1,4 +1,4 @@
-// Clever Crooks | Recipe Finder
+// Clever Cooks | Recipe Finder
 // Coded by Andrew Dyke Oct. 2015
 
 // This is a small web application that is easy to use. It is for people to find recipes from all over the world. It is powered by the Yummply API. 
@@ -91,7 +91,7 @@ recipeApp.displayResult = function(recipeObject) {
 
 
 	// Make an image tag and assign an src and alt attribute to it
-	var image = $('<img>').attr('src', imageUrl).attr('alt', 'A picture the recipe');
+	var image = $('<img>').attr('src', imageUrl).attr('alt', 'A picture of the recipe');
 
 	var linkImage = $('<a>').attr('href', originalSource).append(image);
 	// A link to the orginal source
@@ -102,7 +102,7 @@ recipeApp.displayResult = function(recipeObject) {
 	// Make a div with a class of recipeBox and append(insert) within it the variables we just made to make a div with an H2, img, and two p tags inside it with all the info we want our user to see.
 	var recipeBox = $('<div>').addClass('recipeBox', 'hvr-float-shadow').append(name, linkImage, ingredientsTitle, ingredients);
 
-	//  Then place the recipeBox in an element with the id of recipe
+	//  Then place the recipeBox in the element with the id of 'recipe'
 	$('#recipe').append(recipeBox);
 
 	if (recipeApp.numRecipes === 12) {
