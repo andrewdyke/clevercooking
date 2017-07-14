@@ -23,7 +23,7 @@ recipeApp.maxResult = 12;
 // This function gets back all requested values through a query string. The variables you see concatenated within the query string are storing values inputted by our user. 
 recipeApp.getRecipes = function(selectedHoliday, selectedCourse, prepTime) {
 	// API URL & QUERY STRING
-	var apiUrl = 'http://api.yummly.com/v1/api/recipes?_app_id='+ recipeApp.apiId +'&_app_key='+ recipeApp.apiKey + selectedHoliday + selectedCourse + prepTime + '&requirePictures=true&maxResult=' + recipeApp.maxResult + '&start=' + recipeApp.numRecipes;
+	var apiUrl = 'https://api.yummly.com/v1/api/recipes?_app_id='+ recipeApp.apiId +'&_app_key='+ recipeApp.apiKey + selectedHoliday + selectedCourse + prepTime + '&requirePictures=true&maxResult=' + recipeApp.maxResult + '&start=' + recipeApp.numRecipes;
 	// AJAX is used to get info across the internerd from our API
 	$.ajax({
 		// using the url variable we made
@@ -63,7 +63,7 @@ recipeApp.getRecipes = function(selectedHoliday, selectedCourse, prepTime) {
 // we define the value as idSent within this function so we can remember it was the id we're using to get the meatier data of each recipe.
 recipeApp.getOneRecipe = function(idSent) {
 	// In the url used in this request for a specific recipe we use idSent to specify the recipe we want 
-	var apiUrl = 'http://api.yummly.com/v1/api/recipe/'+ idSent +'?_app_id='+ recipeApp.apiId +'&_app_key='+ recipeApp.apiKey;
+	var apiUrl = 'https://api.yummly.com/v1/api/recipe/'+ idSent +'?_app_id='+ recipeApp.apiId +'&_app_key='+ recipeApp.apiKey;
 	$.ajax({
 		url: apiUrl,
 		method: 'GET',
